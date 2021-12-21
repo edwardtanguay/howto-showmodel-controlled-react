@@ -7,11 +7,11 @@ function App() {
 
 	return (
 		<div className="App">
-			<InfoModal shouldShow={shouldShowModal} onRequestClose={setShouldShowModal(false)}>
+			<InfoModal shouldShow={shouldShowModal} onRequestClose={() => setShouldShowModal(false)}>
 				<h2>Info</h2>
 				<p>This is the info.</p>
 			</InfoModal>
-			<button onClick={setShouldShowModal(!shouldShowModal)}>
+			<button onClick={() => setShouldShowModal(!shouldShowModal)}>
 				{shouldShowModal ? 'Hide Modal' : 'Show Modal'}
 			</button>
 		</div>

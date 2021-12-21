@@ -23,7 +23,7 @@ z-index: 2;
 }
 `;
 
-export const InfoModal = ({ shouldShow, onRequestClose, children }) => {
+export const InfoModal = ({ shouldShow, onRequestClose, children}) => {
 	return shouldShow ? (
 		<ModalBackground onClick={onRequestClose}>
 			<ModalBody onClick={e => e.stopPropagation()}>
